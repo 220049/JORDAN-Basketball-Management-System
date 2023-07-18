@@ -30,7 +30,7 @@
 <!-- sidebar content upto here -->
 <div class="innercontent">
   <div class="indiviudal-basketball" th:each="basketball:${basketballs}">
-    <a th:href="@{~/admin/product/}+${basketball.fut_salId}">
+    <a th:href="@{~/admin/product/}+${basketball.basket_ballId}">
     <img th:src="'data:image/png;base64,'+${basketball.imageBase64}" alt="image/">
     <h2 th:text="${basketball.basketballname}"></h2>
     <p th:text="${basketball.Description}"></p>
