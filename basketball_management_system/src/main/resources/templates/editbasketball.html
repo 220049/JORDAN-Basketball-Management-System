@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" th:href="@{~/css/editfutsal.css}">
+  <link rel="stylesheet" th:href="@{~/css/editbasketball.css}">
   <title></title>
 </head>
 
@@ -18,45 +18,45 @@
   <div class="back">
     <a th:href="@{/admin/view}"><i class="fa-solid fa-backward"> Back</i></a>
   </div>
-  <h3>Edit the Info of Futsal</h3>
-  <form th:method="post" th:action="@{/ball/save}" th:object="${futsals}" enctype="multipart/form-data">
+  <h3>Edit the Info of Basketball</h3>
+  <form th:method="post" th:action="@{/ball/save}" th:object="${basketballs}" enctype="multipart/form-data">
 
   <div class="inputsection">
-    <input class="iddds" hidden type="text" th:field="*{fid}" th:value="${clickedfutsal.getFut_salId()}">
+    <input class="iddds" hidden type="text" th:field="*{fid}" th:value="${clickedbasketball.getBasket_ballId()}">
 
     <div class="name basketball">
-      <input type="text" placeholder="Enter the Futsal name" required th:field="*{fname}" th:value="${clickedfutsal.getFutsalname()}">
+      <input type="text" placeholder="Enter the Basketball name" required th:field="*{fname}" th:value="${clickedbasketball.getBasketballname()}">
     </div>
     <div class="price basketball">
-      <input type="text" placeholder="Price of Futsal per Hour" th:field="*{fprice}" th:value="${clickedfutsal.getFutsalprice()}">
+      <input type="text" placeholder="Price of Basketball per Hour" th:field="*{fprice}" th:value="${clickedbasketball.getBasketballprice()}">
     </div>
     <div class="contact basketball">
-      <input type="text" placeholder="Enter the location of basketball" th:field="*{fcontact}" th:value="${clickedfutsal.getFutsalcontact()}">
+      <input type="text" placeholder="Enter the location of basketball" th:field="*{fcontact}" th:value="${clickedbasketball.getBasketballcontact()}">
     </div>
     <div class="location basketball">
-      <input type="text" placeholder="Enter the location of basketball" th:field="*{flocation}" th:value="${clickedfutsal.getFutsallocation()}">
+      <input type="text" placeholder="Enter the location of basketball" th:field="*{flocation}" th:value="${clickedbasketball.getBasketballlocation()}">
     </div>
     <div class="desc">
-      <textarea type="text" placeholder="Description About Futsal"th:field="*{Description}" th:value="${clickedfutsal.getDescription()}"></textarea>
+      <textarea type="text" placeholder="Description About Basketball"th:field="*{Description}" th:value="${clickedbasketball.getDescription()}"></textarea>
     </div>
     <div class="photo basketball">
-      <input type="file"th:field="*{image}" th:value="${clickedfutsal.getFutsalimage()}">
+      <input type="file"th:field="*{image}" th:value="${clickedbasketball.getBasketballimage()}">
     </div>
     <div class="photo basketball">
-      <input type="file"th:field="*{image1}" th:value="${clickedfutsal.getFutsalimage1()}">
+      <input type="file"th:field="*{image1}" th:value="${clickedbasketball.getBasketballimage1()}">
     </div>
     <div class="photo basketball">
-      <input type="file"th:field="*{image2}" th:value="${clickedfutsal.getFutsalimage2()}">
+      <input type="file"th:field="*{image2}" th:value="${clickedbasketball.getBasketballimage2()}">
     </div>
 
 
   </div>
   <div class="edit">
-   <a th:href="@{~/admin/edit/}+${clickedfutsal.fut_salId}"> <button type="submit">Save Changes</button>
+   <a th:href="@{~/admin/edit/}+${clickedbasketball.basket_ballId}"> <button type="submit">Save Changes</button>
    </a>
   </div>
   <div class="delete">
-   <a th:href="@{~/admin/delete/}+${clickedfutsal.fut_salId}"> <button type="button">Delete Futsal</button>
+   <a th:href="@{~/admin/delete/}+${clickedbasketball.basket_ballId}"> <button type="button">Delete Basketball</button>
     </a>
   </div>
 
