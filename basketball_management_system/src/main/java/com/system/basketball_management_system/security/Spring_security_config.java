@@ -42,12 +42,16 @@ public class Spring_security_config {
                 .authenticated()
                 .and()
                 .formLogin()
-                .loginPage("/login")
+                .loginPage("/user/login")
                 .defaultSuccessUrl("/home/homepage",true)
                 .usernameParameter("email")
                 .permitAll()
                 .and()
-                .httpBasic();
+                .logout()
+                .logoutUrl("/user/logout")
+                .logoutSuccessUrl("/user/login")
+                .invalidateHttpSession(true)
+                .deleteCookies("JSESSIONID");
 
         return httpSecurity.build();
     }
