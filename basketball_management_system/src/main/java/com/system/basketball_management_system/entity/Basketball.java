@@ -30,7 +30,7 @@ public class Basketball {
     private String basketballimage;
     private String basketballimage1;
     private String basketballimage2;
-
+@Column(length=1000)
     private String Description;
 
     @Transient
