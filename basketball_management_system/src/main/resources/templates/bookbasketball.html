@@ -101,7 +101,7 @@
 
         <div class="information">
           <i class="fas fa-map-marker-alt"></i>
-          <p th:text="${clickedBasketball.getBasketballlocation()}"></p>
+          <p th:text="${clickedbasketball.getBasketballlocation()}"></p>
         </div>
         <div class="information">
           <i class="fas fa-phone-alt"></i>
@@ -147,9 +147,9 @@
         <div class="input-container">
           <input
                   type="date"
-                  name="date"
-                  class="input"
-                  th:field="*{date}">
+                  name="date">
+<!--                  th:field="*{date}"-->
+
         </div>
 
         <input type="text"  hidden="hidden" name="id" th:value="${userdata.id}">

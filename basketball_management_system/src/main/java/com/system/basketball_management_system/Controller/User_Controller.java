@@ -174,20 +174,12 @@ public class User_Controller {
                 "check your inbox");
         return "redirect:/user/login";
     }
+
     @PostMapping("/logout")
-
-    public String logout(Authentication authentication) {
-
-        if (authentication.isAuthenticated()) {
-
-            SecurityContextHolder.clearContext();
-
-        }
-
-        return "redirect:/login";
-
+    public String logout(Authentication authentication){
+        SecurityContextHolder.clearContext();
+        return "redirect:/user/login";
     }
-
 
 
 }
