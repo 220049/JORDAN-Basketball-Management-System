@@ -226,20 +226,20 @@ form {
     margin: 1.5rem 0;
 }
 
-.input {
-    height: 8vh;
-    width: 100%;
-    outline: none;
-    border: 2px solid #fafafa;
-    background: none;
-    padding: 0.6rem 1.2rem;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.95rem;
-    letter-spacing: 0.5px;
-    border-radius: 25px;
-    transition: 0.3s;
-}
+/*.input {*/
+/*    height: 8vh;*/
+/*    width: 100%;*/
+/*    outline: none;*/
+/*    border: 2px solid #fafafa;*/
+/*    background: none;*/
+/*    padding: 0.6rem 1.2rem;*/
+/*    color: #fff;*/
+/*    font-weight: 500;*/
+/*    font-size: 1.95rem;*/
+/*    letter-spacing: 0.5px;*/
+/*    border-radius: 25px;*/
+/*    transition: 0.3s;*/
+/*}*/
 /* send button */
 .send {
     padding: 0.6rem 1.3rem;
