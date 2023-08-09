@@ -30,6 +30,7 @@
           th:src="@{/images/ucl1.png}"
           alt="BASKETBALL"
           srcset=""
+          class="img-logo"
   />JORDAN BASKETBALL HALL</a
   >
 
@@ -50,6 +51,8 @@
     <a th:href="@{~/user/profile/}+${userdata.id}">
       <span th:text="${userdata.getName()}" style="color: black;margin-left: 5px; margin-top: -15px;" ></span>
     </a>
+
+    <a th:href="@{~/user/logout}">logout</a>
 
   </nav>
 
