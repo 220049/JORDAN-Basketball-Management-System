@@ -12,6 +12,8 @@ body {
     font-weight: 400;
     color: #666666;
     background: #eaeff4;
+    background: url('https://basketball.bc.ca/image/w2000-h900-c20:9/files/AdobeStock_127296532-web%20(1)-28.jpg');
+    background-size: cover;
 }
 
 .wrapper {
