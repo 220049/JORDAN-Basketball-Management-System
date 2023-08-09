@@ -12,6 +12,8 @@ body {
     font-weight: 400;
     color: #666666;
     background: #eaeff4;
+    background: url('https://basketball.bc.ca/image/w2000-h900-c20:9/files/AdobeStock_127296532-web%20(1)-28.jpg');
+    background-size: cover;
 }
 
 .wrapper {
@@ -27,7 +29,7 @@ body {
 .container {
     position: relative;
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     height: auto;
     display: flex;
     background: #ffffff;
@@ -56,6 +58,8 @@ p {
 }
 
 .btn {
+    marin-left:50px  ;
+    margin-top: 10px;
     display: inline-block;
     padding: 7px 20px;
     font-size: 16px;
@@ -77,14 +81,18 @@ p {
 .col-left,
 .col-right {
     width: 55%;
-    padding: 45px 35px;
+    height: 500px;
+    padding:5px 90px;
     display: flex;
+}
+.col-right{
+    padding-top:100px
 }
 
 .col-left {
     width: 55%;
     /* background: #4CAF50; */
-    background: url('https://basketball.bc.ca/image/w2000-h900-c20:9/files/AdobeStock_127296532-web%20(1)-28.jpg');
+    background: url('https://cdn.pixabay.com/photo/2013/05/02/21/23/basketball-108622_1280.jpg');
     background-size: cover;
     border-radius: 10px;
     /* -webkit-clip-path: polygon(98% 17%, 100% 34%, 98% 51%, 100% 68%, 98% 84%, 100% 100%, 0 100%, 0 0, 100% 0);
@@ -107,12 +115,7 @@ p {
     }
 }
 
-.login-text {
-    position: relative;
-    width: 100%;
-    color: #ffffff;
-    text-align: center;
-}
+
 
 .login-form {
     position: relative;
