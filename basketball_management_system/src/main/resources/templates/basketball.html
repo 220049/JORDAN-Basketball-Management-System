@@ -39,16 +39,20 @@
     <input class="field" type="text" hidden placeholder="UserId..."  th:field="*{fid}" th:value="${basketball.fid}" />
 
     <div class="name basketball">
-      <input type="text" placeholder="Enter the Basketball name" class="input-type" required th:field="*{fname}" th:value="${basketball.fname}">
+      <input type="text" placeholder="Enter the Basketball name" class="input-type" th:field="*{fname}" th:value="${basketball.fname}" style="text-transform: capitalize;" required>
     </div>
     <div class="price basketball">
-      <input type="text" placeholder="Price of Basketball per Hour" class="input-type" th:field="*{fprice}" th:value="${basketball.fprice}">
+<!--      <input type="text" placeholder="Price of Basketball per Hour" class="input-type" th:field="*{fprice}" th:value="${basketball.fprice}">-->
+<!--      <input type="number" placeholder="Price of Basketball per Hour" class="input-type" th:field="*{fprice}" th:value="${basketball.fprice}" required>-->
+        <input type="number" placeholder="Price of Basketball per Hour" class="input-type" th:field="*{fprice}" th:value="${basketball.fprice}" required min="0">
     </div>
     <div class="contact basketball">
-      <input type="text" placeholder="Contact Number of Basketball" class="input-type" th:field="*{fcontact}" th:value="${basketball.fcontact}">
+<!--      <input type="text" placeholder="Contact Number of Basketball" class="input-type" th:field="*{fcontact}" th:value="${basketball.fcontact}">-->
+      <input type="tel" placeholder="Contact Number of Basketball" class="input-type" th:field="*{fcontact}" th:value="${basketball.fcontact}" pattern="9\d{9}" required>
     </div>
     <div class="location basketball">
-      <input type="text" placeholder="Enter the location of basketball" class="input-type" th:field="*{flocation}" th:value="${basketball.flocation}">
+<!--      <input type="text" placeholder="Enter the location of basketball" class="input-type" th:field="*{flocation}" th:value="${basketball.flocation}">-->
+      <input type="text" placeholder="Enter the location of basketball" class="input-type" th:field="*{flocation}" th:value="${basketball.flocation}" style="text-transform: capitalize;" required>
     </div>
     <div class="desc basketball">
       <textarea type="text" placeholder="Description About Basketball" class="input-type" th:field="*{description}" th:value="${basketball.description}" cols="40" rows="10">
