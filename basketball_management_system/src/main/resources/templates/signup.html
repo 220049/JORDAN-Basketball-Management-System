@@ -26,16 +26,18 @@
                 <h2>Signup</h2>
                 <form>
                     <p>
-                        <input type="text" placeholder="Name" required th:field="*{name}" th:value="${user.name}">
+                        <input type="text" placeholder="Name" required th:field="*{name}" th:value="${user.name}" pattern="^[A-Za-z\s]+$" style="text-transform: capitalize;">
                     </p>
                     <p>
-                        <input type="text" placeholder="Address" required th:field="*{address} " th:value="${user.address}">
+                        <input type="text" placeholder="Address" required th:field="*{address} " th:value="${user.address}" style="text-transform: capitalize;" >
                     </p>
                     <p>
                         <input type="email" placeholder="Email" required th:field="*{email}" th:value="${user.email}">
                     </p>
                     <p>
-                        <input type="text" placeholder="Phone Number" required th:field="*{mobile_no}" th:value="${user.mobile_no}">
+<!--                        <input type="text" placeholder="Phone Number" required th:field="*{mobile_no}" th:value="${user.mobile_no}">-->
+                        <input type="tel" placeholder="Phone Number" required th:field="*{mobile_no}" th:value="${user.mobile_no}" pattern="9\d{9}" >
+
                     </p>
                     <p>
                         <input type="password" placeholder="Password" required th:field="*{password}" th:value="${user.password}">
